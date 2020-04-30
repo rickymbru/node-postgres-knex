@@ -28,4 +28,5 @@ npx knex migrate:latest
 npx knex seed:make 001_users
 npx knex seed:run
 npx knex seed:run --specific 002_projects.js
+npx knex migrate:make add_column_delete_at_to_users
 ```

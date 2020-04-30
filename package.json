@@ -1,0 +1,32 @@
+{
+  "name": "node-postgres-knex",
+  "version": "1.0.0",
+  "description": "<h3 align=\"center\"> \r     API NodeJS + Express + PostGree + Knex\r <h3>\r <br>",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickymbru/node-postgres-knex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rickymbru/node-postgres-knex/issues"
+  },
+  "homepage": "https://github.com/rickymbru/node-postgres-knex#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.1",
+    "pg": "^8.0.3",
+    "pg-hstore": "^2.3.3"
+  }
+}

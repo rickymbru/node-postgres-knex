@@ -3,10 +3,19 @@ const express = require ('express');
 const routes = express.Router();
 
 const UserController = require ('./controllers/UserController');
+const ProjectController = require ('./controllers/ProjectController');
 
-routes.get('/users', UserController.index);
-routes.post('/users', UserController.create);
-routes.put('/users/:id', UserController.update);
-routes.delete('/users/:id', UserController.delete);
-
-module.exports = routes;
+routes
+    // Users
+    .get('/users', UserController.index)
+    .post('/users', UserController.create)
+    .put('/users/:id', UserController.update)
+    .delete('/users/:id', UserController.delete)
+    // Project
+    .get('/projects', ProjectController.index)
+    .get('/projects/:user_id', ProjectController.list)
+    .post('/projects/', ProjectController.create)
+    .put('/projects/:id', ProjectController.update)
+    .delete('/projects/:id', ProjectController.delete)
+    
+module.exports = routes

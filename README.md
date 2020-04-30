@@ -27,4 +27,5 @@ npx knex migrate:make create_table_users
 npx knex migrate:latest
 npx knex seed:make 001_users
 npx knex seed:run
+npx knex seed:run --specific 002_projects.js
 ```
